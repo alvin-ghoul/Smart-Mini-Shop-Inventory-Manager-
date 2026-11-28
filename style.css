@@ -1,0 +1,129 @@
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     font-family: Arial, sans-serif;
+ }
+
+ body {
+     background: #f1f5f9;
+     color: #1e293b;
+     padding: 30px 15px;
+ }
+
+ .container {
+     max-width: 900px;
+     margin: auto;
+ }
+
+ /* Header */
+ header {
+     background: #0f766e;
+     color: white;
+     text-align: center;
+     padding: 30px;
+     border-radius: 15px;
+     margin-bottom: 25px;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+ }
+
+ header h1 {
+     margin-bottom: 20px;
+ }
+
+ .stats {
+     display: flex;
+     justify-content: center;
+     gap: 20px;
+     flex-wrap: wrap;
+ }
+
+ .stats p {
+     background: rgba(255, 255, 255, 0.2);
+     padding: 12px 18px;
+     border-radius: 8px;
+ }
+
+ /* Form */
+ .form-container {
+     background: white;
+     padding: 25px;
+     border-radius: 15px;
+     margin-bottom: 25px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+ }
+
+ h2 {
+     color: #0f766e;
+     margin-bottom: 20px;
+ }
+
+ form {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+ label {
+     font-weight: bold;
+     margin-bottom: -8px;
+ }
+
+ input,
+ select {
+     width: 100%;
+     padding: 13px;
+     border: 2px solid #cbd5e1;
+     border-radius: 8px;
+     font-size: 15px;
+     outline: none;
+ }
+
+ input:focus,
+ select:focus {
+     border-color: #0f766e;
+ }
+
+ button {
+     background: #0f766e;
+     color: white;
+     padding: 14px;
+     border: none;
+     border-radius: 8px;
+     font-size: 16px;
+     font-weight: bold;
+     cursor: pointer;
+     transition: 0.3s;
+ }
+
+ button:hover {
+     background: #115e59;
+     transform: translateY(-2px);
+ }
+
+ /* Inventory */
+ .inventory-container {
+     background: white;
+     padding: 25px;
+     border-radius: 15px;
+     min-height: 150px;
+     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.07);
+ }
+
+ #inventory-list {
+     display: flex;
+     flex-direction: column;
+     gap: 15px;
+ }
+
+ /* Mobile responsive design */
+ @media (max-width: 600px) {
+     header h1 {
+         font-size: 23px;
+     }
+
+     .stats {
+         flex-direction: column;
+         gap: 10px;
+     }
+ }
